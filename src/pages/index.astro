@@ -1,15 +1,32 @@
 ---
+import Card from "../components/Card.astro";
+import Navigation from "../components/Navigation.astro";
+import "../style/style.css";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Navigation />
+    <h1>Astro</h1>
+    <p>hej</p>
+    <main>
+      <Button variant="primary" size="medium">Text</Button>
+      <Button variant="secondary" size="small">Text</Button>
+
+      <!-- 
+      <Card header="Hej verden">
+        <img src="https://api.lorem.space/image/album?w=150&h=150&hash=8B7B" alt="" />
+        <button>Klik her</button>
+      </Card>
+	  -->
+    </main>
+  </body>
 </html>
